@@ -9,6 +9,9 @@ export interface MenuItem extends Models.Document {
     protein: number;
     rating: number;
     type: string;
+    categories?: string[];
+    tags?: string[];
+    is_featured?: boolean;
 }
 
 export interface Category extends Models.Document {
@@ -90,7 +93,7 @@ interface ProfileFieldProps {
     icon: ImageSourcePropType;
 }
 
-interface CreateUserPrams {
+interface CreateUserParams {
     email: string;
     password: string;
     name: string;
@@ -104,4 +107,19 @@ interface SignInParams {
 interface GetMenuParams {
     category: string;
     query: string;
+    limit?: number;
+    offset?: number;
+}
+
+interface SubmitContactMessageParams {
+    name: string;
+    email: string;
+    phone?: string;
+    subject: string;
+    message: string;
+}
+
+interface SubscriptionParams {
+    email: string;
+    name?: string;
 }
