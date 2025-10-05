@@ -7,7 +7,7 @@
   "regions": ["iad1"],
   "functions": {
     "src/**/*.js": {
-      "runtime": "nodejs18.x"
+      "runtime": "nodejs18"
     }
   }
 }
