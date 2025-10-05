@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "buildCommand": "npx expo export --platform web",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "framework": "vite",
+  "regions": ["iad1"],
+  "functions": {
+    "src/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
