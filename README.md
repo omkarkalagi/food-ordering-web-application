@@ -1,3 +1,4 @@
+Live Model - https://food-ordering-application-inky.vercel.app/
 <div align="center">
   <br />
     <a href="https://www.youtube.com/watch?v=LKrX390fJMw" target="_blank">
@@ -92,4 +93,4 @@ If you want to deploy programmatically (CI) you can pass `--token <YOUR_TOKEN>` 
 
 ## License
 
-MIT
+Copyrights Reserved to Kalagi Group of Companies
