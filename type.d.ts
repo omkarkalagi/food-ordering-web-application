@@ -1,5 +1,20 @@
 import { Models } from "react-native-appwrite";
 
+export type UserType = 'customer' | 'restaurant_owner';
+
+export interface Order extends Models.Document {
+    customer_id: string;
+    restaurant_id: string;
+    items: CartItemType[];
+    total_amount: number;
+    status: OrderStatus;
+    order_notes?: string;
+    delivery_address: string;
+    payment_method: string;
+    created_at: string;
+    updated_at: string;
+}
+
 export interface MenuItem extends Models.Document {
     name: string;
     price: number;
@@ -19,10 +34,26 @@ export interface Category extends Models.Document {
     description: string;
 }
 
-export interface User extends Models.Document {
+export interface Restaurant extends Models.Document {
     name: string;
+    description: string;
+    image_url: string;
+    address: string;
+    phone: string;
     email: string;
-    avatar: string;
+    owner_id: string;
+    rating: number;
+    cuisine_types: string[];
+    is_open: boolean;
+    opening_hours: {
+        monday: { open: string; close: string; closed: boolean };
+        tuesday: { open: string; close: string; closed: boolean };
+        wednesday: { open: string; close: string; closed: boolean };
+        thursday: { open: string; close: string; closed: boolean };
+        friday: { open: string; close: string; closed: boolean };
+        saturday: { open: string; close: string; closed: boolean };
+        sunday: { open: string; close: string; closed: boolean };
+    };
 }
 
 export interface CartCustomization {
@@ -97,6 +128,7 @@ interface CreateUserParams {
     email: string;
     password: string;
     name: string;
+    user_type: UserType;
 }
 
 interface SignInParams {
