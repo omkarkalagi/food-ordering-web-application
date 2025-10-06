@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "buildCommand": "npx expo export --platform web",
-  "outputDirectory": "dist",
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
   "installCommand": "npm install",
-  "framework": "vite",
-  "regions": ["iad1"]
+  "framework": "create-react-app",
+  "regions": ["iad1"],
+  "env": {
+    "REACT_APP_STRIPE_PUBLISHABLE_KEY": "@stripe-publishable-key",
+    "REACT_APP_FIREBASE_API_KEY": "@firebase-api-key"
+  }
 }
