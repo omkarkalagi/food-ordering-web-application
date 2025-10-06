@@ -93,4 +93,4 @@ If you want to deploy programmatically (CI) you can pass `--token <YOUR_TOKEN>` 
 
 ## License
 
-MIT
+Copyrights Reserved to Kalagi Group of Companies
