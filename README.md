@@ -1,4 +1,4 @@
-Live Model - https://food-ordering-application-9p6aqwni5-omkar-ds-projects.vercel.app/
+Live Model - https://food-ordering-application-nu.vercel.app/
 <div align="center">
   <br />
     <a href="https://www.youtube.com/watch?v=LKrX390fJMw" target="_blank">
