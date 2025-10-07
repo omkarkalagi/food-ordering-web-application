@@ -8,7 +8,7 @@ const mockRestaurants = [
   {
     id: '1',
     name: 'Spice Garden',
-    image: 'https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400',
+    image: 'https://images.unsplash.com/photo-1559847844-5315695dadae?w=400',
     cuisine: ['Indian', 'North Indian'],
     rating: 4.5,
     deliveryTime: '25-35 min',
